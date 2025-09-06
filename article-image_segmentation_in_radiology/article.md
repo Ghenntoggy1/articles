@@ -1,11 +1,3 @@
-# Image Segmentation in Medical Radiology: A State of the Art Review
-
-**Author:** Gusev Roman¹  
-**Affiliation:** ¹Sigmoid, Machine Learning Engineer Intern, Chișinău, Republic of Moldova  
-**Email:** [gusev.roman.work@gmail.com](mailto:gusev.roman.work@gmail.com)  
-**Date:** 08.09.2025
-
-
 <style>
 figure {
     text-align: center;
@@ -24,6 +16,14 @@ figcaption {
     font-style: italic;
 }
 </style>
+
+# Image Segmentation in Medical Radiology: A State of the Art Review
+
+**Author:** Gusev Roman¹  
+**Affiliation:** ¹Sigmoid, Machine Learning Engineer Intern, Chișinău, Republic of Moldova  
+**Email:** [gusev.roman.work@gmail.com](mailto:gusev.roman.work@gmail.com)  
+**Date:** 08.09.2025
+
 # Abstract
 
 With modern day technologies and advancements, Radiology became more
