@@ -154,10 +154,10 @@ Artificial Neural Networks are formed of several components [[9]](#ref_intro_9):
     <a href="#fig:lit_rev_fig_1" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_1">1</a>) [[10]](#ref_intro_10).
 
-    <div align="center" style="background-color:#f8f9fa; padding:10px; border-radius:10px; display:inline-block;">
-    <img src="src/figures/neuron.png" alt="Artificial Neuron Structure" width="50%"><br>
-    <em>Fig. 1 - Artificial Neuron Structure</em>
-    </div>
+    <p id='fig:lit_rev_fig_1' align="center">
+    <img src="src/figures/neuron.jpg" alt="Artificial Neuron Structure" width="50%">
+    </p>
+    <p align="center"><em>Fig. 1 - Artificial Neuron Structure</em></p>
 
 2.  **Activation Function**: a mathematical function applied to the
     output of an Artificial Neuron, which introduces non-linearity into
@@ -179,11 +179,9 @@ Artificial Neural Networks are formed of several components [[9]](#ref_intro_9):
     $`K \in \{class_1, class_2, ..., class_i\}, i = num_{classes}`$ is
     the number of classes, in case of classification problem, or
     $`K=1`$ - if it used for a regression task.
-
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/layers.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 2 - Artificial Neural Network Structure - Layers</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_2' align="center">
+<img src="src/figures/layers.png" alt="Artificial Neuron Structure" width="50%" />
+<p align="center"><em>Fig. 1 - Artificial Neural Network Structure - Layers</em></p>
 
 Work with Radiologic Imaging involves visual analysis of the images,
 detection of the deviations from normality and, at the end,
@@ -203,10 +201,10 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     fig. <a href="#fig:lit_rev_fig_3" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_3">3</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/cv_1.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 3 - Image Classification Task</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/cv_1.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 3 - Image Classification Task</em></p>
+    
 
 2.  **Object Detection**: the task of identification and localization of
     examples of a specific class on an image. Typically for this
@@ -219,10 +217,10 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     <a href="#fig:lit_rev_fig_4" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_4">4</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/cv_3.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 4 - Object Detection Task</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/cv_3.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 4 - Object Detection Task</em></p>
+    
 
 3.  **Semantic Segmentation**: the task of assigning to each pixel of
     the given image a specific label/class, that results in binary masks
@@ -236,10 +234,10 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     <a href="#fig:lit_rev_fig_5" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_5">5</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/cv_2.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 5 - Semantic Segmentation Task</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/cv_2.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 5 - Semantic Segmentation Task</em></p>
+    
 
 4.  **Instance Segmentation**: the task similar to Semantic
     Segmentation, but focused on delineation of the objects within the
@@ -248,10 +246,10 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     (See fig. <a href="#fig:lit_rev_fig_6" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_6">6</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/cv_4.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 6 - Instance Segmentation Task</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/cv_4.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 6 - Instance Segmentation Task</em></p>
+    
 
 As a result, radiologists may benefit a lot from Computer Vision in
 general [[13]](#ref_intro_13). The main focus of this paper is Image Segmentation, that has
@@ -281,10 +279,10 @@ it quickly became one of the most commonly used ANNs in this field
     Activation\text{ }map = Input * Filter = \sum_{y=0}^{columns}\left( \sum_{x=0}^{rows} Input\left(x-p, y-q\right) Filter\left(x,y\right) \right)
     ```
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/conv2d.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 7 - Convolution Operation</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/conv2d.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 7 - Convolution Operation</em></p>
+    
 
 2.  **Pooling Layer**: a layer that reduces the spatial dimensions
     (down-sampling) of the feature maps while retaining the most
@@ -295,10 +293,10 @@ it quickly became one of the most commonly used ANNs in this field
     <a href="#fig:lit_rev_fig_8" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_8">8</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/max_pool.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 8 - Max-Pooling Layer</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/max_pool.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 8 - Max-Pooling Layer</em></p>
+    
 
 3.  **Activation Function Layer**: each convolutional layer employs an
     activation function that is applied to the output map, derived after
@@ -328,10 +326,10 @@ research paper by Shelhamer et. al. (See fig.
 <a href="#fig:lit_rev_fig_9" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_9">9</a>).
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/fcn.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 9 - Fully Convolutional Neural Network Structure</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/fcn.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 9 - Fully Convolutional Neural Network Structure</em></p>
+
 
 1.  **Encoder**: a part responsible for down-sampling, similar as in
     description above, using sequences of Convolutional and Pooling
@@ -346,10 +344,10 @@ data-reference="fig:lit_rev_fig_9">9</a>).
     <a href="#fig:lit_rev_fig_10" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_10">10</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/trans_conv.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 10 - Transposed Convolution Operation</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/trans_conv.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 10 - Transposed Convolution Operation</em></p>
+    
 
 One of the most used Image Segmentation models that was researched for
 the task of Semantic Segmentation in Medical Imaging is U-Net, due to
@@ -371,10 +369,10 @@ that may be lost during down-sampling, are kept across the algorithm. In
 other words, these connections pass context to upper layers in Encoder
 [[19]](#ref_intro_19).
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/unet.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 11 - U-Net Architecture</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/unet.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 11 - U-Net Architecture</em></p>
+
 
 All these additions makes U-Net better at reconstruction of the original
 image spatial characteristics, as well as overlapping binary maps onto
@@ -382,16 +380,16 @@ the image, creating the segments around predicted as positive class
 pixels (See fig. <a href="#fig:lit_rev_fig_12" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_12">12</a>).
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/unet_example.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 12 - Example of Image Segmentation using U-Net - Result on the
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/unet_example.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 12 - Example of Image Segmentation using U-Net - Result on the
 ISBI cell tracking challenge. <strong>(a)</strong> part of an input
 image of the "PhC-US373" data set. <strong>(b)</strong> Segmentation
 result (cyan mask) with manual ground truth (yellow border)
 <strong>(c)</strong> input image of the "DIC-HeLa" data set.
 <strong>(d)</strong> Segmentation result (random colored masks) with
-manual ground truth (yellow border).</figcaption>
-</figure>
+manual ground truth (yellow border).</em></p>
+
 
 Medical Images contain many structures, both normal, such as organs,
 bones, muscles, fat and others, and abnormal ones - tumors, lesions,
@@ -416,11 +414,11 @@ images in all 3 plans - Axial, Coronal and Sagittal (See fig.
 <a href="#fig:lit_rev_fig_13" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_13">13</a>) [[21]](#ref_intro_21).
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/brain_plans.jpg" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 13 - The three perspective planes used in medical imaging -
-Axial/Transversal, Coronal and Sagittal</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/brain_plans.jpg" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 13 - The three perspective planes used in medical imaging -
+Axial/Transversal, Coronal and Sagittal</em></p>
+
 
 Several datasets are available on web, including the one used in the
 study case of Brain Tumor Segmentation using enhanced versions of U-Net
@@ -433,11 +431,11 @@ proposed workflow of the model is displayed below (See fig.
 <a href="#fig:lit_rev_fig_14" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_14">14</a>):
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/workflow.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 14 - The three perspective planes used in medical imaging -
-Axial/Transversal, Coronal and Sagittal</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/workflow.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 14 - The three perspective planes used in medical imaging -
+Axial/Transversal, Coronal and Sagittal</em></p>
+
 
 First step of the workflow focuses on the image preprocessing. ImageNet
 brain tumor dataset, used in the referenced paper, is available on
@@ -500,19 +498,19 @@ seen the original image of the brain and on the right side the
 corresponding binary mask that represents the surrounded brain tumor
 border with white color.
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
+<p id='fig:lit_rev_fig_LOJ' align="center">
     <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
         <div style="flex: 1;">
-            <img src="src/figures/1.jpg" style="width: 100%;" style="width: 100%; height: auto;" />
+            <img src="src/figures/1.jpg" style="width: 100%;" alt="LOH" width="50%" />
             <p><em>(a) Example of an MRI Image with brain tumor present</em></p>
         </div>
         <div style="flex: 1;">
-            <img src="src/figures/1_mask.jpg" style="width: 100%;" style="width: 100%; height: auto;" />
+            <img src="src/figures/1_mask.jpg" style="width: 100%;" alt="LOH" width="50%" />
             <p><em>(b) Corresponding Binary Mask with segmented brain tumor</em></p>
         </div>
     </div>
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 15 - First Sample of the Brain Tumor Dataset</figcaption>
-</figure>
+    <p align="center"><em>Fig. 15 - First Sample of the Brain Tumor Dataset</em></p>
+
 
 However, images are converted to *RGB* color map, which, taken in
 consideration the importance of image preprocessing, can be an obstacle
@@ -526,11 +524,11 @@ following example (See fig.
 <a href="#fig:lit_rev_fig_16" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_16">16</a>):
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/clahe.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 16 - Comparison between original, HE, and CLAHE equalized X-ray
-images with corresponding histograms</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/clahe.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 16 - Comparison between original, HE, and CLAHE equalized X-ray
+images with corresponding histograms</em></p>
+
 
 As it may be seen, CLAHE provides a better histogram equalization than
 in traditional HE method. As it was mentioned, converted images are in
@@ -556,11 +554,11 @@ range of possible color nuances (See fig.
 <a href="#fig:lit_rev_fig_17" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_17">17</a>).
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/rgb_lab.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 17 - Comparison between <em>RGB</em> and <em>CIELAB</em> color
-spaces</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/rgb_lab.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 17 - Comparison between <em>RGB</em> and <em>CIELAB</em> color
+spaces</em></p>
+
 
 As it may be seen, the triangle on the left side represents how *RGB*
 captures color nuances, being a subset of the possible colors
@@ -622,11 +620,11 @@ from the training examples (See fig.
 <a href="#fig:lit_rev_fig_18" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_18">18</a>).
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/Figure_1.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 18 - Original and Applied <em>LAB</em> conversion and CLAHE
-algorithm - Original dimension</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/Figure_1.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 18 - Original and Applied <em>LAB</em> conversion and CLAHE
+algorithm - Original dimension</em></p>
+
 
 The proposed model in the reviewed paper is Multi-Scale Attention U-Net
 with EfficientNet-B4 Encoder. As it was mentioned, U-Net is formed of
@@ -641,10 +639,10 @@ two components - Encoder and Decoder.
     <a href="#fig:lit_rev_fig_19" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_19">19</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/b4net.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 19 - EfficientNet-B4 Architecture</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/b4net.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 19 - EfficientNet-B4 Architecture</em></p>
+    
 
     First step is to pass input image through simple convolution layer,
     while the rest of the blocks are MBConv layers, that comprises
@@ -662,10 +660,10 @@ two components - Encoder and Decoder.
     <a href="#fig:lit_rev_fig_20" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_20">20</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/mbconv.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 20 - MBConv Architecture</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/mbconv.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 20 - MBConv Architecture</em></p>
+    
 
 2.  **Decoder**: Multi-Scale Attention architecture is embedded inside
     of the Decoder and focuses on spatial position of important features
@@ -686,10 +684,10 @@ two components - Encoder and Decoder.
     <a href="#fig:lit_rev_fig_21" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_21">21</a>).
 
-    <figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-    <img src="src/figures/msad.png" style="width: 100%; height: auto;" />
-    <figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 21 - Multi-Scale Attention Decoder</figcaption>
-    </figure>
+    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <img src="src/figures/msad.png" alt="LOH" width="50%" />
+    <p align="center"><em>Fig. 21 - Multi-Scale Attention Decoder</em></p>
+    
 
 In the paper, researchers focused on several metrics:
 
@@ -839,12 +837,12 @@ data-reference="fig:lit_rev_fig_22">22</a>). It may be noticed that
 EfficientNet-B4 obtained the closest segmentation to the original
 ground-truth one.
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/results.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 22 - Predicted Binary Masks by Multi-Scale Attention U-Net with
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/results.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 22 - Predicted Binary Masks by Multi-Scale Attention U-Net with
 each Encoder of EfficientNet-B Family alongside with Ground-Truth Mask
-and original Image.</figcaption>
-</figure>
+and original Image.</em></p>
+
 
 Another study focused on implementation of Optimized Fuzzy K-Means
 clustering algorithm for Brain Tumor Segmentation. K-Means clustering is
@@ -885,10 +883,10 @@ Clustering, the steps to train the model are the following:
 5.  Repeat iteratively previous two steps until no change in clusters
     centroids or maximum iterations achieved (See fig. <a href="#fig:lit_rev_fig_23" data-reference-type="ref" data-reference="fig:lit_rev_fig_23">23</a>).
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/kmeans.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 23 - Example of K-Means Algorithm</figcaption>
-</figure>
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/kmeans.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 23 - Example of K-Means Algorithm</em></p>
+
 
 Fuzzy K-Means works using Fuzzy Logic. It computes a Membership Matrix
 for each data point in contrast to Euclidean Distance applied in the
@@ -925,14 +923,14 @@ seen, however False Positives and False Negatives can still be seen,
 but, since the approach is much less complex than CNNs, results are
 impressive.
 
-<figure id="fig:lit_rev_fig_.*" style="text-align: center; margin: 1em auto; max-width: 60%; width: 100%;">
-<img src="src/figures/results_2.png" style="width: 100%; height: auto;" />
-<figcaption style="margin-top: 0.5em; font-style: italic;">Fig. 24 - Segmentation Results <strong>(a)</strong> Original Image
+<p id='fig:lit_rev_fig_LOJ' align="center">
+<img src="src/figures/results_2.png" alt="LOH" width="50%" />
+<p align="center"><em>Fig. 24 - Segmentation Results <strong>(a)</strong> Original Image
 <strong>(b)</strong> Preprocessed Image, <strong>(c)</strong>
 Ground-Truth Binary Mask <strong>(d)</strong> K-Means Clustering,
 <strong>(e)</strong> FCM <strong>f</strong> Proposed Fuzzy K-Means
-Clustering</figcaption>
-</figure>
+Clustering</em></p>
+
 
 At the end of the paper, they offered the performance metrics of the
 Fuzzy K-Means Clustering in Brain Tumor Image Segmentation. The
