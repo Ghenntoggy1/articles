@@ -1,9 +1,3 @@
----
-title: "Image Segmentation in Medical Radiology: A State of the Art Review"
-author: "Gusev Roman"
-date: "08.09.2025"
----
-
 # Image Segmentation in Medical Radiology: A State of the Art Review
 
 **Author:** Gusev Roman¹  
@@ -17,6 +11,17 @@ figure {
     text-align: center;
     margin: 1em auto;
     max-width: 60%;
+    width: 100%; /* Add this to ensure figure takes available width */
+}
+
+figure img {
+    width: 100%; /* Make image fill the figure container */
+    height: auto;
+}
+
+figcaption {
+    margin-top: 0.5em; /* Add some spacing if needed */
+    font-style: italic; /* Optional styling */
 }
 </style>
 # Abstract
