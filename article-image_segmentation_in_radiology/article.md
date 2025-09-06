@@ -695,7 +695,7 @@ In the paper, researchers focused on several metrics:
     |P \cap G| \text{ - total number of overlapping pixels in between predicted and ground truth segmentation}
         
     \end{gathered}
-    ```
+    $$
 
 2.  **Intersection over union (IoU)**: known as Jaccard Index, measures
     the ratio between the intersection and union between Predicted
@@ -716,7 +716,7 @@ In the paper, researchers focused on several metrics:
     |P \cup G| \text{ - total number of distinct pixels either in predicted or ground truth segmentation}
         
     \end{gathered}
-    ```
+    $$
 
 3.  **Mean intersection over union (mean IoU)**: measures the average
     intersection between the predicted and ground-truth segmentation
@@ -734,7 +734,7 @@ In the paper, researchers focused on several metrics:
     |P_c \cup G_c| \text{ - total number of distinct pixels either in predicted or ground truth segmentation for class $c$}
         
     \end{gathered}
-    ```
+    $$
 
 4.  **Precision**: measures the ratio of correctly identified tumor
     pixels of the total number of pixels that were classified as tumors.
@@ -745,7 +745,7 @@ In the paper, researchers focused on several metrics:
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors}
         
     \end{gathered}
-    ```
+    $$
 
 5.  **Recall**: measures the ratio of correctly classified tumor pixels
     and the total number of actual tumor pixels.
@@ -756,7 +756,7 @@ In the paper, researchers focused on several metrics:
     FN \text{ - total number of incorrectly classified tumor pixels as non-tumors}
         
     \end{gathered}
-    ```
+    $$
 
 6.  **Specificity**: measures the ratio between correctly identified
     non-tumor pixels and the total number of actual non-tumor pixels.
@@ -767,7 +767,7 @@ In the paper, researchers focused on several metrics:
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors}
         
     \end{gathered}
-    ```
+    $$
 
 7.  **Accuracy**: measures the ratio of correctly predicted pixels to
     the total number of pixels. This metric, taken alone, may be
@@ -788,7 +788,7 @@ In the paper, researchers focused on several metrics:
     FN \text{ - total number of incorrectly classified tumor pixels as non-tumors}
         
     \end{gathered}
-    ```
+    $$
 
 As a result, their proposed enhanced U-Net performed very well.
 Specifically, they performed a comparative analysis between different
@@ -857,7 +857,7 @@ Clustering, the steps to train the model are the following:
     \left(x_2, y_2\right) \text{ - coordinates of analyzed data point}
         
     \end{gathered}
-    ```
+    $$
 
 4.  After all the points are assigned, recalculate the centroids as mean
     of all point assigned to the cluster $`K_i`$.
@@ -869,7 +869,7 @@ Clustering, the steps to train the model are the following:
     \vec{x_i} \text{ - vector representing each data point in the cluster $i$}
         
     \end{gathered}
-    ```
+    $$
 
 5.  Repeat iteratively previous two steps until no change in clusters
     centroids or maximum iterations achieved (See fig. <a href="#fig:lit_rev_fig_23" data-reference-type="ref" data-reference="fig:lit_rev_fig_23">23</a>).
