@@ -1,6 +1,9 @@
 # Image Segmentation in Medical Radiology: A State of the Art Review
 
-Author: Gusev Roman
+**Author:** Gusev Roman¹  
+**Affiliation:** ¹Sigmoid, Machine Learning Engineer Intern, Chișinău, Republic of Moldova  
+**Email:** [gusev.roman.work@gmail.com](mailto:gusev.roman.work@gmail.com)  
+**Date:** 08.09.2025
 
 ## Article Summary
 
@@ -35,6 +38,3 @@ The code in this folder provides basic example of Image Dataset Preprocessing be
 - `src/main.py`: This file contains the example provided for the article (Dataset Preprocessing Step). It takes raw input radiologic images and applies preprocessing steps - RGB-LAB Conversion, CLA Histogram Equalization, Gaussian Filtering, Resize, trasnforming them into clean input data for the ML/DL algorithms.
 
 - `src/data/`: This folder contains the images used to demonstrate the input dataset in a Brain Tumor Segmentation Problem. `mask/` folder contains ground-truth binary mask.
-
-## Author
-This article was written by Gusev Roman in LaTeX.

@@ -1,7 +1,7 @@
 ---
 title: "Image Segmentation in Medical Radiology: A State of the Art Review"
 author: "Gusev Roman"
-date: "02.09.2025"
+date: "08.09.2025"
 ---
 
 # Image Segmentation in Medical Radiology: A State of the Art Review
@@ -9,7 +9,7 @@ date: "02.09.2025"
 **Author:** Gusev Roman¹  
 **Affiliation:** ¹Sigmoid, Machine Learning Engineer Intern, Chișinău, Republic of Moldova  
 **Email:** [gusev.roman.work@gmail.com](mailto:gusev.roman.work@gmail.com)  
-**Date:** 02.09.2025
+**Date:** 08.09.2025
 
 
 <style>
