@@ -693,7 +693,6 @@ In the paper, researchers focused on several metrics:
     |P| \text{ - total number of pixels in predicted segmentation} \\
     |G| \text{ - total number of pixels in ground truth segmentation} \\
     |P \cap G| \text{ - total number of overlapping pixels in between predicted and ground truth segmentation}
-        
     \end{gathered}
     $$
 
@@ -714,7 +713,6 @@ In the paper, researchers focused on several metrics:
     |G| \text{ - total number of pixels in ground truth segmentation} \\
     |P \cap G| \text{ - total number of overlapping pixels in between predicted and ground truth segmentation} \\
     |P \cup G| \text{ - total number of distinct pixels either in predicted or ground truth segmentation}
-        
     \end{gathered}
     $$
 
@@ -732,7 +730,6 @@ In the paper, researchers focused on several metrics:
     |G_c| \text{ - total number of pixels in ground truth segmentation for class $c$} \\
     |P_c \cap G_c| \text{ - total number of overlapping pixels in between predicted and ground truth segmentation for class $c$} \\
     |P_c \cup G_c| \text{ - total number of distinct pixels either in predicted or ground truth segmentation for class $c$}
-        
     \end{gathered}
     $$
 
@@ -743,7 +740,6 @@ In the paper, researchers focused on several metrics:
     Precision = \frac{TP}{TP + FP} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors}
-        
     \end{gathered}
     $$
 
@@ -754,7 +750,6 @@ In the paper, researchers focused on several metrics:
     Recall = \frac{TP}{TP + FN} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
     FN \text{ - total number of incorrectly classified tumor pixels as non-tumors}
-        
     \end{gathered}
     $$
 
@@ -765,7 +760,6 @@ In the paper, researchers focused on several metrics:
     Sensitivity = \frac{TN}{TN + FP} \\
     TN \text{ - total number of correctly classified pixels as non-tumors} \\
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors}
-        
     \end{gathered}
     $$
 
@@ -786,7 +780,6 @@ In the paper, researchers focused on several metrics:
     TN \text{ - total number of correctly classified pixels as non-tumors} \\
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors} \\
     FN \text{ - total number of incorrectly classified tumor pixels as non-tumors}
-        
     \end{gathered}
     $$
 
@@ -855,7 +848,6 @@ Clustering, the steps to train the model are the following:
     Distance = \sqrt{\left(x_2-x_1\right)^2 + \left(y_2-y_1\right)^2} \\
     \left(x_1, y_1\right) \text{ - coordinates of $K_i$ centroid} \\
     \left(x_2, y_2\right) \text{ - coordinates of analyzed data point}
-        
     \end{gathered}
     $$
 
@@ -867,7 +859,6 @@ Clustering, the steps to train the model are the following:
     n_i \text{ - number of points in cluster $i$} \\
     K_i \text{ - new centroid of cluster $i$} \\
     \vec{x_i} \text{ - vector representing each data point in the cluster $i$}
-        
     \end{gathered}
     $$
 
