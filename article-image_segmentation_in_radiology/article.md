@@ -11,17 +11,17 @@ figure {
     text-align: center;
     margin: 1em auto;
     max-width: 60%;
-    width: 100%; /* Add this to ensure figure takes available width */
+    width: 100%;
 }
 
 figure img {
-    width: 100%; /* Make image fill the figure container */
+    width: 100%;
     height: auto;
 }
 
 figcaption {
-    margin-top: 0.5em; /* Add some spacing if needed */
-    font-style: italic; /* Optional styling */
+    margin-top: 0.5em;
+    font-style: italic;
 }
 </style>
 # Abstract
