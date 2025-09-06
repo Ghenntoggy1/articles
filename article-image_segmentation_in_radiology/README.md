@@ -1,4 +1,6 @@
-# Image Segmentation In Radiology - State of the Art
+# Image Segmentation in Medical Radiology: A State of the Art Review
+
+Author: Gusev Roman
 
 ## Article Summary
 
