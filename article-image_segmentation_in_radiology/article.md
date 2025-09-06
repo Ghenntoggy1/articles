@@ -154,10 +154,10 @@ Artificial Neural Networks are formed of several components [[9]](#ref_intro_9):
     <a href="#fig:lit_rev_fig_1" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_1">1</a>) [[10]](#ref_intro_10).
 
-    <p align="center">
-    <img src="src/figures/neuron.png" alt="Artificial Neuron Structure" width="50%">
-    </p>
-    <p align="center"><em>Fig. 1 - Artificial Neuron Structure</em></p>
+    <div align="center" style="background-color:#f8f9fa; padding:10px; border-radius:10px; display:inline-block;">
+    <img src="src/figures/neuron.png" alt="Artificial Neuron Structure" width="50%"><br>
+    <em>Fig. 1 - Artificial Neuron Structure</em>
+    </div>
 
 2.  **Activation Function**: a mathematical function applied to the
     output of an Artificial Neuron, which introduces non-linearity into
