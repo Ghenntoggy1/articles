@@ -181,7 +181,7 @@ Artificial Neural Networks are formed of several components [[9]](#ref_intro_9):
     $`K=1`$ - if it used for a regression task.
 <p id='fig:lit_rev_fig_2' align="center">
 <img src="src/figures/layers.png" alt="Artificial Neuron Structure" width="50%" />
-<p align="center"><em>Fig. 1 - Artificial Neural Network Structure - Layers</em></p>
+<p align="center"><em>Fig. 2 - Artificial Neural Network Structure - Layers</em></p>
 
 Work with Radiologic Imaging involves visual analysis of the images,
 detection of the deviations from normality and, at the end,
