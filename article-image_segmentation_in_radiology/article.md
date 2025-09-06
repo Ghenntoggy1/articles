@@ -275,9 +275,9 @@ it quickly became one of the most commonly used ANNs in this field
     data-reference="eq:activation">[eq:activation]</a> (See fig.
     <a href="#fig:lit_rev_fig_7" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_7">7</a>):
-    ``` math
+    $$
     Activation\text{ }map = Input * Filter = \sum_{y=0}^{columns}\left( \sum_{x=0}^{rows} Input\left(x-p, y-q\right) Filter\left(x,y\right) \right)
-    ```
+    $$
 
     <p id='fig:lit_rev_fig_7' align="center">
     <img src="src/figures/conv2d.png" alt="LOH" width="50%" />
@@ -306,12 +306,12 @@ it quickly became one of the most commonly used ANNs in this field
     Eq. <a href="#eq:relu" data-reference-type="ref"
     data-reference="eq:relu">[eq:relu]</a>, however other functions,
     such as: Sigmoid Function, can also be used.
-    ``` math
+    $$
     f(x) = \begin{cases}
             x, & \text{for } x > 0\\
             0, & \text{for } x\leq 0
             \end{cases}
-    ```
+    $$
 
 4.  **Fully-Connected Layer**: a layer that receives, after last pooling
     or convolutional layer, the output of the maps, that is is
@@ -685,7 +685,7 @@ In the paper, researchers focused on several metrics:
 1.  **Dice similarity coefficient (DSC)**: measures the overlap between
     Predicted Segmentation and Ground Truth Segmentation. Higher values
     of DSC coefficient indicate accurate tumor localization.
-    ``` math
+    $$
     \begin{gathered}
     DSC = \frac{2|P \cap G|}{|P|+|G|} \\
     P \text{ - Predicted Segmentation} \\
@@ -705,7 +705,7 @@ In the paper, researchers focused on several metrics:
     of the most used metrics is DSC, due to the fact that, using DSC,
     can be computed Dice Loss $`Dice_{Loss} = 1 - DSC`$, that is
     differentiable, while IoU is not.
-    ``` math
+    $$
     \begin{gathered}
     IoU = \frac{|P \cap G|}{|P \cup G|} = \frac{|P \cap G|}{|P| + |G| - |P \cap G|} \\
     P \text{ - Predicted Segmentation} \\
@@ -722,7 +722,7 @@ In the paper, researchers focused on several metrics:
     intersection between the predicted and ground-truth segmentation
     across all classes in order to give a general interpretation of
     models performance.
-    ``` math
+    $$
     \begin{gathered}
     IoU_{mean} = \frac{1}{C} \sum_{c=1}^C \frac{|P_c \cap G_c|}{|P_c \cup G_c|} = \frac{1}{C} \sum_{c=1}^C \frac{|P_c \cap G_c|}{|P_c| + |G_c| - |P_c \cap G_c|} \\
     C \text{ - total number of classes} \\
@@ -738,7 +738,7 @@ In the paper, researchers focused on several metrics:
 
 4.  **Precision**: measures the ratio of correctly identified tumor
     pixels of the total number of pixels that were classified as tumors.
-    ``` math
+    $$
     \begin{gathered}
     Precision = \frac{TP}{TP + FP} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
@@ -749,7 +749,7 @@ In the paper, researchers focused on several metrics:
 
 5.  **Recall**: measures the ratio of correctly classified tumor pixels
     and the total number of actual tumor pixels.
-    ``` math
+    $$
     \begin{gathered}
     Recall = \frac{TP}{TP + FN} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
@@ -760,7 +760,7 @@ In the paper, researchers focused on several metrics:
 
 6.  **Specificity**: measures the ratio between correctly identified
     non-tumor pixels and the total number of actual non-tumor pixels.
-    ``` math
+    $$
     \begin{gathered}
     Sensitivity = \frac{TN}{TN + FP} \\
     TN \text{ - total number of correctly classified pixels as non-tumors} \\
@@ -779,7 +779,7 @@ In the paper, researchers focused on several metrics:
     high number of samples of majority class, this metric will show high
     accuracy, but the model is still performing badly, since it
     misclassifies all of the minority class.
-    ``` math
+    $$
     \begin{gathered}
     Accuracy = \frac{TP + TN}{TP + TN + FP + FN} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
@@ -804,7 +804,7 @@ Besides that, EfficientNet-B4 Encoder manifested lower consumption of
 computational power compared to EfficientNet-B6, that had similar
 results in performance metrics.
 
-<div id="tab:tab_1">
+<div id="tab:tab_1" align="center">
 
 | **Model**         | **DSC** | **IoU** | **Precision** | **Recall** | **Specificity** |
 |:------------------|:--------|:--------|:--------------|:-----------|:----------------|
@@ -850,7 +850,7 @@ Clustering, the steps to train the model are the following:
 
 3.  Each point in the dataset is assigned to the closest cluster $`K_i`$
     by Euclidian Distance.
-    ``` math
+    $$
     \begin{gathered}
     Distance = \sqrt{\left(x_2-x_1\right)^2 + \left(y_2-y_1\right)^2} \\
     \left(x_1, y_1\right) \text{ - coordinates of $K_i$ centroid} \\
@@ -861,7 +861,7 @@ Clustering, the steps to train the model are the following:
 
 4.  After all the points are assigned, recalculate the centroids as mean
     of all point assigned to the cluster $`K_i`$.
-    ``` math
+    $$
     \begin{gathered}
     K_i = \frac{1}{n_i}\sum_{j=1}^{n_i} \vec{x_i} \\
     n_i \text{ - number of points in cluster $i$} \\
@@ -932,7 +932,7 @@ Besides this, not much information was provided on the algorithms and
 implementations in both articles, therefore no comparison between them
 may be done.
 
-<div id="tab:tab_2">
+<div id="tab:tab_2" align="center">
 
 | **Image No.** | **DSC** | **IoU** | **Precision** | **Recall** | **Accuracy** | **F1 Score** |
 |:---|:---|:---|:---|:---|:---|:---|
