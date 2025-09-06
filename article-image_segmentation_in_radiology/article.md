@@ -201,7 +201,7 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     fig. <a href="#fig:lit_rev_fig_3" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_3">3</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_3' align="center">
     <img src="src/figures/cv_1.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 3 - Image Classification Task</em></p>
     
@@ -217,7 +217,7 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     <a href="#fig:lit_rev_fig_4" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_4">4</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_4' align="center">
     <img src="src/figures/cv_3.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 4 - Object Detection Task</em></p>
     
@@ -234,7 +234,7 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     <a href="#fig:lit_rev_fig_5" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_5">5</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_5' align="center">
     <img src="src/figures/cv_2.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 5 - Semantic Segmentation Task</em></p>
     
@@ -246,7 +246,7 @@ human sight [[11]](#ref_intro_11). Computer Vision is separated into several tas
     (See fig. <a href="#fig:lit_rev_fig_6" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_6">6</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_6' align="center">
     <img src="src/figures/cv_4.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 6 - Instance Segmentation Task</em></p>
     
@@ -279,7 +279,7 @@ it quickly became one of the most commonly used ANNs in this field
     Activation\text{ }map = Input * Filter = \sum_{y=0}^{columns}\left( \sum_{x=0}^{rows} Input\left(x-p, y-q\right) Filter\left(x,y\right) \right)
     ```
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_7' align="center">
     <img src="src/figures/conv2d.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 7 - Convolution Operation</em></p>
     
@@ -293,7 +293,7 @@ it quickly became one of the most commonly used ANNs in this field
     <a href="#fig:lit_rev_fig_8" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_8">8</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_8' align="center">
     <img src="src/figures/max_pool.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 8 - Max-Pooling Layer</em></p>
     
@@ -326,7 +326,7 @@ research paper by Shelhamer et. al. (See fig.
 <a href="#fig:lit_rev_fig_9" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_9">9</a>).
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_9' align="center">
 <img src="src/figures/fcn.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 9 - Fully Convolutional Neural Network Structure</em></p>
 
@@ -344,7 +344,7 @@ data-reference="fig:lit_rev_fig_9">9</a>).
     <a href="#fig:lit_rev_fig_10" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_10">10</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_10' align="center">
     <img src="src/figures/trans_conv.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 10 - Transposed Convolution Operation</em></p>
     
@@ -369,7 +369,7 @@ that may be lost during down-sampling, are kept across the algorithm. In
 other words, these connections pass context to upper layers in Encoder
 [[19]](#ref_intro_19).
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_11' align="center">
 <img src="src/figures/unet.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 11 - U-Net Architecture</em></p>
 
@@ -380,7 +380,7 @@ the image, creating the segments around predicted as positive class
 pixels (See fig. <a href="#fig:lit_rev_fig_12" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_12">12</a>).
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_12' align="center">
 <img src="src/figures/unet_example.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 12 - Example of Image Segmentation using U-Net - Result on the
 ISBI cell tracking challenge. <strong>(a)</strong> part of an input
@@ -414,7 +414,7 @@ images in all 3 plans - Axial, Coronal and Sagittal (See fig.
 <a href="#fig:lit_rev_fig_13" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_13">13</a>) [[21]](#ref_intro_21).
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_13' align="center">
 <img src="src/figures/brain_plans.jpg" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 13 - The three perspective planes used in medical imaging -
 Axial/Transversal, Coronal and Sagittal</em></p>
@@ -431,7 +431,7 @@ proposed workflow of the model is displayed below (See fig.
 <a href="#fig:lit_rev_fig_14" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_14">14</a>):
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_14' align="center">
 <img src="src/figures/workflow.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 14 - The three perspective planes used in medical imaging -
 Axial/Transversal, Coronal and Sagittal</em></p>
@@ -497,21 +497,12 @@ data-reference="fig:lit_rev_fig_15">15</a>). On the left side, can be
 seen the original image of the brain and on the right side the
 corresponding binary mask that represents the surrounded brain tumor
 border with white color.
+<p id='fig:lit_rev_fig_15' ></p>
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
-    <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
-        <div style="flex: 1;">
-            <img src="src/figures/1.jpg" style="width: 100%;" alt="LOH" width="50%" />
-            <p><em>(a) Example of an MRI Image with brain tumor present</em></p>
-        </div>
-        <div style="flex: 1;">
-            <img src="src/figures/1_mask.jpg" style="width: 100%;" alt="LOH" width="50%" />
-            <p><em>(b) Corresponding Binary Mask with segmented brain tumor</em></p>
-        </div>
-    </div>
-    <p align="center"><em>Fig. 15 - First Sample of the Brain Tumor Dataset</em></p>
-
-
+|       ![TumorPresent](src/figures/1.jpg) | ![TumorPresentMask](src/figures/1_mask.jpg) |
+| :--------------------------------------: | :-----------------------------------------: |
+| <p><em>(a) Example of an MRI Image with brain tumor present</em></p> | <p><em>(b) Corresponding Binary Mask with segmented brain tumor</em></p> |
+<p align="center"><em>Fig. 15 - First Sample of the Brain Tumor Dataset</em></p>
 However, images are converted to *RGB* color map, which, taken in
 consideration the importance of image preprocessing, can be an obstacle
 in this process. One of the outlined preprocessing steps is CLAHE
@@ -524,7 +515,7 @@ following example (See fig.
 <a href="#fig:lit_rev_fig_16" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_16">16</a>):
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_16' align="center">
 <img src="src/figures/clahe.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 16 - Comparison between original, HE, and CLAHE equalized X-ray
 images with corresponding histograms</em></p>
@@ -554,7 +545,7 @@ range of possible color nuances (See fig.
 <a href="#fig:lit_rev_fig_17" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_17">17</a>).
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_17' align="center">
 <img src="src/figures/rgb_lab.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 17 - Comparison between <em>RGB</em> and <em>CIELAB</em> color
 spaces</em></p>
@@ -620,7 +611,7 @@ from the training examples (See fig.
 <a href="#fig:lit_rev_fig_18" data-reference-type="ref"
 data-reference="fig:lit_rev_fig_18">18</a>).
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_18' align="center">
 <img src="src/figures/Figure_1.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 18 - Original and Applied <em>LAB</em> conversion and CLAHE
 algorithm - Original dimension</em></p>
@@ -639,7 +630,7 @@ two components - Encoder and Decoder.
     <a href="#fig:lit_rev_fig_19" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_19">19</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_19' align="center">
     <img src="src/figures/b4net.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 19 - EfficientNet-B4 Architecture</em></p>
     
@@ -660,7 +651,7 @@ two components - Encoder and Decoder.
     <a href="#fig:lit_rev_fig_20" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_20">20</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_20' align="center">
     <img src="src/figures/mbconv.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 20 - MBConv Architecture</em></p>
     
@@ -684,7 +675,7 @@ two components - Encoder and Decoder.
     <a href="#fig:lit_rev_fig_21" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_21">21</a>).
 
-    <p id='fig:lit_rev_fig_LOJ' align="center">
+    <p id='fig:lit_rev_fig_21' align="center">
     <img src="src/figures/msad.png" alt="LOH" width="50%" />
     <p align="center"><em>Fig. 21 - Multi-Scale Attention Decoder</em></p>
     
@@ -837,7 +828,7 @@ data-reference="fig:lit_rev_fig_22">22</a>). It may be noticed that
 EfficientNet-B4 obtained the closest segmentation to the original
 ground-truth one.
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_22' align="center">
 <img src="src/figures/results.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 22 - Predicted Binary Masks by Multi-Scale Attention U-Net with
 each Encoder of EfficientNet-B Family alongside with Ground-Truth Mask
@@ -883,7 +874,7 @@ Clustering, the steps to train the model are the following:
 5.  Repeat iteratively previous two steps until no change in clusters
     centroids or maximum iterations achieved (See fig. <a href="#fig:lit_rev_fig_23" data-reference-type="ref" data-reference="fig:lit_rev_fig_23">23</a>).
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_23' align="center">
 <img src="src/figures/kmeans.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 23 - Example of K-Means Algorithm</em></p>
 
@@ -923,12 +914,12 @@ seen, however False Positives and False Negatives can still be seen,
 but, since the approach is much less complex than CNNs, results are
 impressive.
 
-<p id='fig:lit_rev_fig_LOJ' align="center">
+<p id='fig:lit_rev_fig_24' align="center">
 <img src="src/figures/results_2.png" alt="LOH" width="50%" />
 <p align="center"><em>Fig. 24 - Segmentation Results <strong>(a)</strong> Original Image
 <strong>(b)</strong> Preprocessed Image, <strong>(c)</strong>
 Ground-Truth Binary Mask <strong>(d)</strong> K-Means Clustering,
-<strong>(e)</strong> FCM <strong>f</strong> Proposed Fuzzy K-Means
+<strong>(e)</strong> FCM <strong>(f)</strong> Proposed Fuzzy K-Means
 Clustering</em></p>
 
 
