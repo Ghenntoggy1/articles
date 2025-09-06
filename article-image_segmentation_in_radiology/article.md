@@ -275,9 +275,9 @@ it quickly became one of the most commonly used ANNs in this field
     data-reference="eq:activation">[eq:activation]</a> (See fig.
     <a href="#fig:lit_rev_fig_7" data-reference-type="ref"
     data-reference="fig:lit_rev_fig_7">7</a>):
-    ```math
+    $$
     Activation\text{ }map = Input * Filter = \sum_{y=0}^{columns}\left( \sum_{x=0}^{rows} Input\left(x-p, y-q\right) Filter\left(x,y\right) \right)
-    ```
+    $$
 
     <p id='fig:lit_rev_fig_7' align="center">
     <img src="src/figures/conv2d.png" alt="LOH" width="50%" />
@@ -306,12 +306,12 @@ it quickly became one of the most commonly used ANNs in this field
     Eq. <a href="#eq:relu" data-reference-type="ref"
     data-reference="eq:relu">[eq:relu]</a>, however other functions,
     such as: Sigmoid Function, can also be used.
-    ```math
+    $$
     f(x) = \begin{cases}
             x, & \text{for } x > 0\\
             0, & \text{for } x\leq 0
             \end{cases}
-    ```
+    $$
 
 4.  **Fully-Connected Layer**: a layer that receives, after last pooling
     or convolutional layer, the output of the maps, that is is
@@ -685,7 +685,7 @@ In the paper, researchers focused on several metrics:
 1.  **Dice similarity coefficient (DSC)**: measures the overlap between
     Predicted Segmentation and Ground Truth Segmentation. Higher values
     of DSC coefficient indicate accurate tumor localization.
-    ```math
+    <!-- $$
     \begin{aligned}
     DSC = \frac{2|P \cap G|}{|P|+|G|} \\
     P \text{ - Predicted Segmentation} \\
@@ -694,7 +694,9 @@ In the paper, researchers focused on several metrics:
     |G| \text{ - total number of pixels in ground truth segmentation} \\
     |P \cap G| \text{ - total number of overlapping pixels in between predicted and ground truth segmentation}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20DSC%20%3D%20%5Cfrac%7B2%7CP%20%5Ccap%20G%7C%7D%7B%7CP%7C%2B%7CG%7C%7D%20%5C%5C%0D%0A%20%20%20%20P%20%5Ctext%7B%20-%20Predicted%20Segmentation%7D%20%5C%5C%0D%0A%20%20%20%20G%20%5Ctext%7B%20-%20Ground%20Truth%20Segmentation%7D%20%5C%5C%0D%0A%20%20%20%20%7CP%7C%20%5Ctext%7B%20-%20total%20number%20of%20pixels%20in%20predicted%20segmentation%7D%20%5C%5C%0D%0A%20%20%20%20%7CG%7C%20%5Ctext%7B%20-%20total%20number%20of%20pixels%20in%20ground%20truth%20segmentation%7D%20%5C%5C%0D%0A%20%20%20%20%7CP%20%5Ccap%20G%7C%20%5Ctext%7B%20-%20total%20number%20of%20overlapping%20pixels%20in%20between%20predicted%20and%20ground%20truth%20segmentation%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 2.  **Intersection over union (IoU)**: known as Jaccard Index, measures
     the ratio between the intersection and union between Predicted
@@ -704,7 +706,7 @@ In the paper, researchers focused on several metrics:
     of the most used metrics is DSC, due to the fact that, using DSC,
     can be computed Dice Loss $`Dice_{Loss} = 1 - DSC`$, that is
     differentiable, while IoU is not.
-    ```math
+    <!-- $$
     \begin{aligned}
     IoU = \frac{|P \cap G|}{|P \cup G|} = \frac{|P \cap G|}{|P| + |G| - |P \cap G|} \\
     P \text{ - Predicted Segmentation} \\
@@ -714,13 +716,15 @@ In the paper, researchers focused on several metrics:
     |P \cap G| \text{ - total number of overlapping pixels in between predicted and ground truth segmentation} \\
     |P \cup G| \text{ - total number of distinct pixels either in predicted or ground truth segmentation}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20IoU%20%3D%20%5Cfrac%7B%7CP%20%5Ccap%20G%7C%7D%7B%7CP%20%5Ccup%20G%7C%7D%20%3D%20%5Cfrac%7B%7CP%20%5Ccap%20G%7C%7D%7B%7CP%7C%20%2B%20%7CG%7C%20-%20%7CP%20%5Ccap%20G%7C%7D%20%5C%5C%0D%0A%20%20%20%20P%20%5Ctext%7B%20-%20Predicted%20Segmentation%7D%20%5C%5C%0D%0A%20%20%20%20G%20%5Ctext%7B%20-%20Ground%20Truth%20Segmentation%7D%20%5C%5C%0D%0A%20%20%20%20%7CP%7C%20%5Ctext%7B%20-%20total%20number%20of%20pixels%20in%20predicted%20segmentation%7D%20%5C%5C%0D%0A%20%20%20%20%7CG%7C%20%5Ctext%7B%20-%20total%20number%20of%20pixels%20in%20ground%20truth%20segmentation%7D%20%5C%5C%0D%0A%20%20%20%20%7CP%20%5Ccap%20G%7C%20%5Ctext%7B%20-%20total%20number%20of%20overlapping%20pixels%20in%20between%20predicted%20and%20ground%20truth%20segmentation%7D%20%5C%5C%0D%0A%20%20%20%20%7CP%20%5Ccup%20G%7C%20%5Ctext%7B%20-%20total%20number%20of%20distinct%20pixels%20either%20in%20predicted%20or%20ground%20truth%20segmentation%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 3.  **Mean intersection over union (mean IoU)**: measures the average
     intersection between the predicted and ground-truth segmentation
     across all classes in order to give a general interpretation of
     models performance.
-    ```math
+    <!-- $$
     \begin{aligned}
     IoU_{mean} = \frac{1}{C} \sum_{c=1}^C \frac{|P_c \cap G_c|}{|P_c \cup G_c|} = \frac{1}{C} \sum_{c=1}^C \frac{|P_c \cap G_c|}{|P_c| + |G_c| - |P_c \cap G_c|} \\
     C \text{ - total number of classes} \\
@@ -731,37 +735,45 @@ In the paper, researchers focused on several metrics:
     |P_c \cap G_c| \text{ - total number of overlapping pixels in between predicted and ground truth segmentation for class $c$} \\
     |P_c \cup G_c| \text{ - total number of distinct pixels either in predicted or ground truth segmentation for class $c$}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20IoU_%7Bmean%7D%20%3D%20%5Cfrac%7B1%7D%7BC%7D%20%5Csum_%7Bc%3D1%7D%5EC%20%5Cfrac%7B%7CP_c%20%5Ccap%20G_c%7C%7D%7B%7CP_c%20%5Ccup%20G_c%7C%7D%20%3D%20%5Cfrac%7B1%7D%7BC%7D%20%5Csum_%7Bc%3D1%7D%5EC%20%5Cfrac%7B%7CP_c%20%5Ccap%20G_c%7C%7D%7B%7CP_c%7C%20%2B%20%7CG_c%7C%20-%20%7CP_c%20%5Ccap%20G_c%7C%7D%20%5C%5C%0D%0A%20%20%20%20C%20%5Ctext%7B%20-%20total%20number%20of%20classes%7D%20%5C%5C%0D%0A%20%20%20%20P_c%20%5Ctext%7B%20-%20Predicted%20Segmentation%20for%20class%20%24c%24%7D%20%5C%5C%0D%0A%20%20%20%20G_c%20%5Ctext%7B%20-%20Ground%20Truth%20Segmentation%20for%20class%20%24c%24%7D%20%5C%5C%0D%0A%20%20%20%20%7CP_c%7C%20%5Ctext%7B%20-%20total%20number%20of%20pixels%20in%20predicted%20segmentation%20for%20class%20%24c%24%7D%20%5C%5C%0D%0A%20%20%20%20%7CG_c%7C%20%5Ctext%7B%20-%20total%20number%20of%20pixels%20in%20ground%20truth%20segmentation%20for%20class%20%24c%24%7D%20%5C%5C%0D%0A%20%20%20%20%7CP_c%20%5Ccap%20G_c%7C%20%5Ctext%7B%20-%20total%20number%20of%20overlapping%20pixels%20in%20between%20predicted%20and%20ground%20truth%20segmentation%20for%20class%20%24c%24%7D%20%5C%5C%0D%0A%20%20%20%20%7CP_c%20%5Ccup%20G_c%7C%20%5Ctext%7B%20-%20total%20number%20of%20distinct%20pixels%20either%20in%20predicted%20or%20ground%20truth%20segmentation%20for%20class%20%24c%24%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 4.  **Precision**: measures the ratio of correctly identified tumor
     pixels of the total number of pixels that were classified as tumors.
-    ```math
+    <!-- $$
     \begin{aligned}
     Precision = \frac{TP}{TP + FP} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20Precision%20%3D%20%5Cfrac%7BTP%7D%7BTP%20%2B%20FP%7D%20%5C%5C%0D%0A%20%20%20%20TP%20%5Ctext%7B%20-%20total%20number%20of%20correctly%20classified%20pixels%20as%20tumors%7D%20%5C%5C%0D%0A%20%20%20%20FP%20%5Ctext%7B%20-%20total%20number%20of%20incorrectly%20classified%20non-tumor%20pixels%20as%20tumors%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 5.  **Recall**: measures the ratio of correctly classified tumor pixels
     and the total number of actual tumor pixels.
-    ```math
+    <!-- $$
     \begin{aligned}
     Recall = \frac{TP}{TP + FN} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
     FN \text{ - total number of incorrectly classified tumor pixels as non-tumors}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20Recall%20%3D%20%5Cfrac%7BTP%7D%7BTP%20%2B%20FN%7D%20%5C%5C%0D%0A%20%20%20%20TP%20%5Ctext%7B%20-%20total%20number%20of%20correctly%20classified%20pixels%20as%20tumors%7D%20%5C%5C%0D%0A%20%20%20%20FN%20%5Ctext%7B%20-%20total%20number%20of%20incorrectly%20classified%20tumor%20pixels%20as%20non-tumors%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 6.  **Specificity**: measures the ratio between correctly identified
     non-tumor pixels and the total number of actual non-tumor pixels.
-    ```math
+    <!-- $$
     \begin{aligned}
     Sensitivity = \frac{TN}{TN + FP} \\
     TN \text{ - total number of correctly classified pixels as non-tumors} \\
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20Sensitivity%20%3D%20%5Cfrac%7BTN%7D%7BTN%20%2B%20FP%7D%20%5C%5C%0D%0A%20%20%20%20TN%20%5Ctext%7B%20-%20total%20number%20of%20correctly%20classified%20pixels%20as%20non-tumors%7D%20%5C%5C%0D%0A%20%20%20%20FP%20%5Ctext%7B%20-%20total%20number%20of%20incorrectly%20classified%20non-tumor%20pixels%20as%20tumors%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 7.  **Accuracy**: measures the ratio of correctly predicted pixels to
     the total number of pixels. This metric, taken alone, may be
@@ -773,7 +785,7 @@ In the paper, researchers focused on several metrics:
     high number of samples of majority class, this metric will show high
     accuracy, but the model is still performing badly, since it
     misclassifies all of the minority class.
-    ```math
+    <!-- $$
     \begin{aligned}
     Accuracy = \frac{TP + TN}{TP + TN + FP + FN} \\
     TP \text{ - total number of correctly classified pixels as tumors} \\
@@ -781,7 +793,9 @@ In the paper, researchers focused on several metrics:
     FP \text{ - total number of incorrectly classified non-tumor pixels as tumors} \\
     FN \text{ - total number of incorrectly classified tumor pixels as non-tumors}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20Accuracy%20%3D%20%5Cfrac%7BTP%20%2B%20TN%7D%7BTP%20%2B%20TN%20%2B%20FP%20%2B%20FN%7D%20%5C%5C%0D%0A%20%20%20%20TP%20%5Ctext%7B%20-%20total%20number%20of%20correctly%20classified%20pixels%20as%20tumors%7D%20%5C%5C%0D%0A%20%20%20%20TN%20%5Ctext%7B%20-%20total%20number%20of%20correctly%20classified%20pixels%20as%20non-tumors%7D%20%5C%5C%0D%0A%20%20%20%20FP%20%5Ctext%7B%20-%20total%20number%20of%20incorrectly%20classified%20non-tumor%20pixels%20as%20tumors%7D%20%5C%5C%0D%0A%20%20%20%20FN%20%5Ctext%7B%20-%20total%20number%20of%20incorrectly%20classified%20tumor%20pixels%20as%20non-tumors%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 As a result, their proposed enhanced U-Net performed very well.
 Specifically, they performed a comparative analysis between different
@@ -843,24 +857,28 @@ Clustering, the steps to train the model are the following:
 
 3.  Each point in the dataset is assigned to the closest cluster $`K_i`$
     by Euclidian Distance.
-    ```math
+    <!-- $$
     \begin{aligned}
     Distance = \sqrt{\left(x_2-x_1\right)^2 + \left(y_2-y_1\right)^2} \\
     \left(x_1, y_1\right) \text{ - coordinates of $K_i$ centroid} \\
     \left(x_2, y_2\right) \text{ - coordinates of analyzed data point}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20Distance%20%3D%20%5Csqrt%7B%5Cleft(x_2-x_1%5Cright)%5E2%20%2B%20%5Cleft(y_2-y_1%5Cright)%5E2%7D%20%5C%5C%0D%0A%20%20%20%20%5Cleft(x_1%2C%20y_1%5Cright)%20%5Ctext%7B%20-%20coordinates%20of%20%24K_i%24%20centroid%7D%20%5C%5C%0D%0A%20%20%20%20%5Cleft(x_2%2C%20y_2%5Cright)%20%5Ctext%7B%20-%20coordinates%20of%20analyzed%20data%20point%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 4.  After all the points are assigned, recalculate the centroids as mean
     of all point assigned to the cluster $`K_i`$.
-    ```math
+    <!-- $$
     \begin{aligned}
     K_i = \frac{1}{n_i}\sum_{j=1}^{n_i} \vec{x_i} \\
     n_i \text{ - number of points in cluster $i$} \\
     K_i \text{ - new centroid of cluster $i$} \\
     \vec{x_i} \text{ - vector representing each data point in the cluster $i$}
     \end{aligned}
-    ```
+    $$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%20%20%20%20%5Cbegin%7Baligned%7D%0D%0A%20%20%20%20K_i%20%3D%20%5Cfrac%7B1%7D%7Bn_i%7D%5Csum_%7Bj%3D1%7D%5E%7Bn_i%7D%20%5Cvec%7Bx_i%7D%20%5C%5C%0D%0A%20%20%20%20n_i%20%5Ctext%7B%20-%20number%20of%20points%20in%20cluster%20%24i%24%7D%20%5C%5C%0D%0A%20%20%20%20K_i%20%5Ctext%7B%20-%20new%20centroid%20of%20cluster%20%24i%24%7D%20%5C%5C%0D%0A%20%20%20%20%5Cvec%7Bx_i%7D%20%5Ctext%7B%20-%20vector%20representing%20each%20data%20point%20in%20the%20cluster%20%24i%24%7D%0D%0A%20%20%20%20%5Cend%7Baligned%7D%0D"></div>
 
 5.  Repeat iteratively previous two steps until no change in clusters
     centroids or maximum iterations achieved (See fig. <a href="#fig:lit_rev_fig_23" data-reference-type="ref" data-reference="fig:lit_rev_fig_23">23</a>).
