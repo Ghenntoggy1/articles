@@ -3,7 +3,8 @@
 **Author:** Gusev Roman¹  
 **Affiliation:** ¹Sigmoid, Machine Learning Engineer Intern, Chișinău, Republic of Moldova  
 **Email:** [gusev.roman.work@gmail.com](mailto:gusev.roman.work@gmail.com)  
-**Date:** 08.09.2025
+**Date:** 08.09.2025  
+**LaTeX PDF Version:** [Overleaf LaTeX](https://www.overleaf.com/read/nywyhnnbgknk#98cea9) _(NOTICE: due to changes in the politics regarding free subscription and compile time, compile PDF using Fast Compilation Method and then recompile using Normal Compilation Method)_
 
 # Abstract
 

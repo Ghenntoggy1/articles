@@ -26,7 +26,7 @@ In order to work with this python file, Python 3.13.4 is recommended. To get sta
    pip install -r requirements.txt
    ```
 
-3. **Execute Python File in the preferred IDE**: Execute `main.ipynb` file in the preferred IDE to see the example in action.
+3. **Execute Python File in the preferred IDE**: Execute `main.py` file in the preferred IDE to see the example in action.
     ```sh
     python -u "<path/to/file>"
     ```
